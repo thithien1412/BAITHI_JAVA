@@ -37,7 +37,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/btnsetting"
-        android:text="Cài đặt"
+        android:text="Luật chơi"
         android:layout_gravity="center"
         style="@style/Widget.AppCompat.Button.Colored"/>
     <Button

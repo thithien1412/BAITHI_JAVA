@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     int current_level=1;
     Button btnplay,btnsetting,btnexit;
     MediaPlayer media;
+    int language=0;
     final String API = "http://192.168.52.1:8083/api/questions?level=1";
 
 
@@ -57,7 +58,17 @@ public class MainActivity extends AppCompatActivity {
         btnsetting.setVisibility(View.INVISIBLE);
         btnexit.setVisibility(View.INVISIBLE);
         media = MediaPlayer.create(MainActivity.this,R.raw.intro);
+        media.setLooping(true);
         media.start();
+
+        btnsetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inte = new Intent(MainActivity.this,Rule.class);
+                startActivity(inte);
+                finish();
+            }
+        });
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
@@ -135,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
                 btnplay.setVisibility(View.VISIBLE);
                 btnsetting.setVisibility(View.VISIBLE);
                 btnexit.setVisibility(View.VISIBLE);
+
                 btnplay.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -151,12 +163,6 @@ public class MainActivity extends AppCompatActivity {
                 });
 
 
-                btnsetting.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-                    }
-                });
 
 
                 btnexit.setOnClickListener(new View.OnClickListener() {

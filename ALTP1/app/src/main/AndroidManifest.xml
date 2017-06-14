@@ -20,7 +20,9 @@
         </activity>
         <activity android:name=".QuestionActivity" />
         <activity android:name=".AfterLevel" />
-        <activity android:name=".ScoreBoard"></activity>
+        <activity android:name=".ScoreBoard" />
+        <activity android:name=".Setting" />
+        <activity android:name=".Rule"></activity>
     </application>
 
 </manifest>

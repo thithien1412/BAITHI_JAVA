@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.imdou.altp1.Rule"
+    android:background="@drawable/purple">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#d8f402"
+        android:gravity="center"
+        android:text="Luật chơi"
+        android:textStyle="bold"
+        android:textSize="40dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text=" Người chơi sẽ lần lượt trả lời từng câu hỏi. Có tổng cộng 15 câu hỏi. Mỗi câu hỏi sẽ tương đương với số điểm nhất định.Có 3 mốc câu hỏi quan trọng đó là 5, 10 và 15. Vượt qua mỗi mốc này, số điểm người chơi sẽ được bảo toàn theo số điểm mỗi mốc đó nếu người chơi trả lời sai."
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Có 3 quyền trợ giúp"
+        android:textColor="#f01"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/fiftypercent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sự trợ giúp 50/50"
+            android:gravity="center"
+            android:textColor="#d8f402"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/assist"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hỏi ý kiến khán giả"
+            android:gravity="center"
+            android:textColor="#d8f402"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/change"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thay đổi câu hỏi"
+            android:gravity="center"
+            android:textColor="#d8f402"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="30dp"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trở về"
+        android:id="@+id/btnback"
+        android:layout_gravity="center"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+</LinearLayout>
