@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.imdou.altp1.ScoreBoard"
+    android:orientation="vertical"
+    android:background="@drawable/purple">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#ffff"
+        android:layout_gravity="center"
+        android:text="Điểm cao nhất"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_score"
+        ></ListView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trở về trang chủ"
+        android:layout_gravity="end"
+        android:id="@+id/btnHome"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:visibility="invisible"/>
+
+</LinearLayout>
