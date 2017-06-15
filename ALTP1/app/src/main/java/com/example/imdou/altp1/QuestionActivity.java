@@ -292,7 +292,8 @@ public class QuestionActivity extends AppCompatActivity {
         if (check_correct) current_score = ListConst_Score.constant_list_score[current_level-1];
         else if (current_level>10 ) current_score = ListConst_Score.constant_list_score[9];
             else if (current_level>5) current_score =  ListConst_Score.constant_list_score[4];
-             else current_score = 0;
+             else if (current_level == 1)  current_score=0;
+                else current_score = ListConst_Score.constant_list_score[current_level-2];
         inte.putExtra("current_score",current_score);
         inte.putExtra("current_level",current_level);
         inte.putExtra("check_correct",check_correct);
